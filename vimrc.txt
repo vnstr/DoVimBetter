@@ -62,8 +62,9 @@ syntax enable
 set background=dark
 
 "/////////////////////
+"
 "Установка color-cheme
-colorscheme badwolf
+colorscheme solarized
 
 "Закаченные:
 "solarized
@@ -97,3 +98,22 @@ set number "Включить нумерацию строк слева
 
 "Авто скобки
 imap {<CR> {<CR>}<ESC>O
+imap ( ()<ESC>i
+imap "<CR> ""<ESC>i
+imap '<CR> ''<ESC>i
+imap [ []<ESC>i
+
+"Авто пробелы
+imap , , 
+imap = =<ESC>i <ESC>la 
+imap + +<ESC>i <ESC>la 
+imap - -<ESC>i <ESC>la 
+imap * *<ESC>i <ESC>la 
+imap / /<ESC>i <ESC>la 
+
+"Удобная постановка ; из скобок
+imap <C-l> <ESC>$a;<ESC>
+
+"Разметка табов, линих пробелов итд.
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
+set list
