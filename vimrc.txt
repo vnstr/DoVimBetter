@@ -105,11 +105,6 @@ imap [ []<ESC>i
 
 "Авто пробелы
 imap , , 
-imap = =<ESC>i <ESC>la 
-imap + +<ESC>i <ESC>la 
-imap - -<ESC>i <ESC>la 
-imap * *<ESC>i <ESC>la 
-imap / /<ESC>i <ESC>la 
 
 "Удобная постановка ; из скобок
 imap <C-l> <ESC>$a;<ESC>
