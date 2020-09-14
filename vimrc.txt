@@ -30,6 +30,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'flazz/vim-colorschemes' "Большой набор цветовых схемы
 Plugin 'vim-airline/vim-airline' "Powerline внизу
 Plugin 'preservim/nerdtree' "Дерево каталогов
+Plugin 'luochen1990/rainbow' "Цветные парные скобки ()
 
 
 " All of your Plugins must be added before the following line
@@ -60,6 +61,8 @@ map <C-m> :NERDTreeToggle<CR>
 syntax enable
 "Установка цвета заднего фона
 set background=dark
+"Настройка плагина на цветные скобки ()
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 "/////////////////////
 "
@@ -98,10 +101,10 @@ set number "Включить нумерацию строк слева
 
 "Авто скобки
 imap {<CR> {<CR>}<ESC>O
-imap ( ()<ESC>i
-imap "<CR> ""<ESC>i
-imap '<CR> ''<ESC>i
-imap [ []<ESC>i
+"imap ( ()<ESC>i
+"imap "<CR> ""<ESC>i
+"imap '<CR> ''<ESC>i
+"imap [ []<ESC>i
 
 "Авто пробелы
 imap , , 
