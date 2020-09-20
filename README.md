@@ -10,11 +10,10 @@ Install:
 3. Move .vimrc to /Users/user_name/
 (mv .vimrc ~/)
 
-4. Move dir 'colors' to /Users/user_name/.vim/
-(mv colors ~/.vim)
-
 5. Open vim, and write command :PluginInstall (Vundle should install plugins)
 
 6. Restart vim
+
+P.s. check .vimrc, you can find more setting wich commented
 
 Good luck!

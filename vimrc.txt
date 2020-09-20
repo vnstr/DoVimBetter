@@ -28,7 +28,6 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 Plugin 'flazz/vim-colorschemes' "Большой набор цветовых схемы
-Plugin 'vim-airline/vim-airline' "Powerline внизу
 Plugin 'preservim/nerdtree' "Дерево каталогов
 Plugin 'luochen1990/rainbow' "Цветные парные скобки ()
 
@@ -67,13 +66,9 @@ let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowTo
 "/////////////////////
 "
 "Установка color-cheme
-colorscheme solarized
+colorscheme apprentice
 
-"Закаченные:
-"solarized
-"
 "Хорошие flazz-color-схемы:
-"solarized
 "OceanicNext
 "Mustang
 "apprentice
@@ -102,7 +97,6 @@ set number "Включить нумерацию строк слева
 "Авто скобки
 imap {<CR> {<CR>}<ESC>O
 "imap ( ()<ESC>i
-"imap "<CR> ""<ESC>i
 "imap '<CR> ''<ESC>i
 "imap [ []<ESC>i
 
