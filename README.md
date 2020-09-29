@@ -10,10 +10,10 @@ Install:
 3. Move .vimrc to /Users/user_name/
 (mv .vimrc ~/)
 
-5. Open vim, and write command :PluginInstall (Vundle should install plugins)
+5. Open vim, and write command :PluginInstall (Vundle will have to install plugins)
 
 6. Restart vim
 
-P.s. check .vimrc, you can find more setting wich commented
+P.s. check .vimrc, you can find more settings wich commented
 
 Good luck!
