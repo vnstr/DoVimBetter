@@ -1,3 +1,92 @@
+"///////////////////////////////////////////
+"                                          /
+"                                          /
+"                                          /
+"              GDRIVE                      /
+"                   VIMRC                  /
+"                                          /
+"                                          /
+"                                          /
+"                                          /
+"///////////////////////////////////////////
+
+
+
+"Включнеие подцветки синтаксиса
+syntax enable
+"Установка цвета заднего фона
+set background=dark
+"Настройка плагина на цветные скобки ()
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
+
+"/////////////////////
+"
+"Установка color-cheme
+colorscheme OceanicNext
+
+"Хорошие flazz-color-схемы:
+"OceanicNext
+"Mustang
+"apprentice
+"gruvbox
+"1989
+"256-jungle
+
+"/////////////////////////
+
+set autoindent "Автоотступы
+set t_Co=256 "Включить 256 цветов
+set mousehide "Прятать курсор мыши при вводе
+set mouse=a "Включить мышь
+set termencoding=utf8 "Кодировка терминала
+set wrap "Включить перенос на другую строку
+"Убираем резервные файлы
+set nobackup
+set noswapfile
+
+set encoding=utf8 "Кодировка файлов по умолчанию
+set encoding=UTF-8
+set ruler "Счетчик строк и символов в углу
+set visualbell t_vb= "Выключаем звук
+set number "Включить нумерацию строк слева
+
+
+"Авто скобки
+imap {<CR> {<CR>}<ESC>O
+"imap ( ()<ESC>i
+"imap '<CR> ''<ESC>i
+"imap [ []<ESC>i
+
+"Авто пробелы
+imap , , 
+
+"Удобная постановка ; из скобок
+imap <C-l> <ESC>$a;<ESC>
+
+"Разметка табов, линих пробелов итд.
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
+set list
+
+
+
+"Клавиши для плагина дерева каталогов:
+"
+""Вызов дерева
+map <C-m> :NERDTreeToggle<CR>
+
+"/////////////////////////////////////
+
+" Удоьные HotKeys для плагина FZF
+ let g:fzf_action = {
+   \ 'ctrl-t': 'tab split', 
+   \ 'ctrl-x': 'split', 
+   \ 'ctrl-v': 'vsplit' }
+
+"/////////////////////////////////////
+
+
+" Настройки для Vundle (менеджер плагинов)
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -27,10 +116,26 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
-Plugin 'flazz/vim-colorschemes' "Большой набор цветовых схемы
-Plugin 'preservim/nerdtree' "Дерево каталогов
-Plugin 'luochen1990/rainbow' "Цветные парные скобки ()
 
+" Мои стороннии плагины
+
+
+" Большой набор цветовых схемы
+Plugin 'flazz/vim-colorschemes' 
+
+" Дерево каталогов
+Plugin 'preservim/nerdtree' 
+
+
+" Цветные парные скобки ()
+Plugin 'luochen1990/rainbow'
+
+
+" Поиск фвйлов по команде :FZF
+Plugin 'junegunn/fzf' 
+
+
+" ///////////////////////////////////////////////////////////
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,66 +151,4 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-"
-
-"/////////////////////////////////////
-"Клавиши для плагина дерева каталогов:
-
-"Вызов дерева
-map <C-m> :NERDTreeToggle<CR>
-
-"/////////////////////////////////////
-
-"Включнеие подцветки синтаксиса
-syntax enable
-"Установка цвета заднего фона
-set background=dark
-"Настройка плагина на цветные скобки ()
-let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
-
-"/////////////////////
-"
-"Установка color-cheme
-colorscheme apprentice
-
-"Хорошие flazz-color-схемы:
-"OceanicNext
-"Mustang
-"apprentice
-"gruvbox
-"1989
-"256-jungle
-
-"/////////////////////
-
-set autoindent "Автоотступы
-set t_Co=256 "Включить 256 цветов
-set mousehide "Прятать курсор мыши при вводе
-set mouse=a "Включить мышь
-set termencoding=utf8 "Кодировка терминала
-set wrap "Включить перенос на другую строку
-"Убираем резервные файлы
-set nobackup
-set noswapfile
-
-set encoding=utf8 "Кодировка файлов по умолчанию
-set ruler "Счетчик строк и символов в углу
-set visualbell t_vb= "Выключаем звук
-set number "Включить нумерацию строк слева
-
-
-"Авто скобки
-imap {<CR> {<CR>}<ESC>O
-"imap ( ()<ESC>i
-"imap '<CR> ''<ESC>i
-"imap [ []<ESC>i
-
-"Авто пробелы
-imap , , 
-
-"Удобная постановка ; из скобок
-imap <C-l> <ESC>$a;<ESC>
-
-"Разметка табов, линих пробелов итд.
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
-set list
+" //////////////////////////////////////////////////////////////////////////////////////////
