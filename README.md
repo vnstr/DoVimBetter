@@ -1,4 +1,4 @@
-# my_vim_rc
+# DoVimBetter
 
 Install:
 
