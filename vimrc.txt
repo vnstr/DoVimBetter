@@ -12,6 +12,19 @@
 
 
 
+
+"Макрос рефакторинга переменной.
+"Курсор на переменную: gr<new_name><ENTER>
+
+"Для обычной переменной.
+nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
+
+"Для глобальной.
+nnoremap gR gD:%s/<C-R>///gc<left><left><left>
+
+"//////////////////////////////////////////
+
+
 "Включнеие подцветки синтаксиса
 syntax enable
 "Установка цвета заднего фона
@@ -22,7 +35,7 @@ let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowTo
 "/////////////////////
 "
 "Установка color-cheme
-colorscheme OceanicNext
+colorscheme molokai
 
 "Хорошие flazz-color-схемы:
 "OceanicNext
@@ -121,7 +134,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 
 " Большой набор цветовых схемы
-Plugin 'flazz/vim-colorschemes' 
+Plugin 'rafi/awesome-vim-colorschemes' 
 
 " Дерево каталогов
 Plugin 'preservim/nerdtree' 
