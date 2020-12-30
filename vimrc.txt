@@ -47,6 +47,9 @@ colorscheme molokai
 
 "/////////////////////////
 
+set tabstop=4 "Размер tab 4
+set shiftwidth=4 "Размер tab 4
+
 set autoindent "Автоотступы
 set t_Co=256 "Включить 256 цветов
 set mousehide "Прятать курсор мыши при вводе
